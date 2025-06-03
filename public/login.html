@@ -4,28 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login</title>
-  <link rel="stylesheet" href="loginstyle.css" />
-   <script>
-    function setAccion(value) {
-      document.getElementById('accion').value = value;
-    }
-  </script>
 </head>
 <body>
-  <div class="divFill">
-   <h1>Login</h1>
-   <br>
-    <form method="POST" action="/login">
-      <input type="hidden" name="accion" id="accion">
-      <label for="usuario">Usuario</label><br><br>
-      <input type="text" name="usuario" required><br><br><br>
-
-      <label class="label2" for="contrasena">Contraseña</label><br><br>
-      <input type="password" name="contrasena" required><br><br><br>
-
-      <button type="submit" onclick="setAccion('login')">Iniciar Sesión</button>
-      <button type="submit" onclick="setAccion('registro')">Registrar</button>
-    </form>
-  </div>
+  <h1>Iniciar Sesión</h1>
+  <form method="POST" action="/login">
+    <label for="usuario">Usuario:</label>
+    <input type="text" name="usuario" required>
+    <br>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" name="contrasena" required>
+    <br>
+    <button type="submit">Iniciar Sesión</button>
+  </form>
 </body>
 </html>
